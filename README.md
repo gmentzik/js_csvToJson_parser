@@ -3,7 +3,7 @@ Also MYSQL procedures that that can receive JSON text as input and use property 
 
 Information on requirements is bellow:
 
-Update: 2023-01-03
+Update: 2023-02-17
 ==================
 
 CSV specs
