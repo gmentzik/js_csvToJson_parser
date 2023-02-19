@@ -1,5 +1,10 @@
 // START CONVERT CSV TO JSON
 // Parse Button JS code
+// csvToJson inputs:
+// csvtext: the csv text from an input text field
+// additionalPropertiesObj: a json object with properties you want to add/replace at final json output
+// delimiter: the csv values seperator
+// quoteChar: the quote char for used in csv to eclose values
 
 // csvToJson object properties names
 const PARSEDATA = 'data';
@@ -187,29 +192,14 @@ const convertCSVtoJsonAndAddToStateTenantObject = () => {
 }
 
 // PREPARE CSVTOJSON STATE FROM FORM FIELDS
-//global
-jsonKey = 'global';
-csv_text = $("ImportCSVForm.Fields.global_inputs_csv");
-convertCSVtoJsonAndAddToStateObject();
-// footprint
-jsonKey = 'footprint';
-csv_text = $("ImportCSVForm.Fields.footprint_csv");
-convertCSVtoJsonAndAddToStateObject();
+// examples calling the function to update Budibase state
 //pmi
 jsonKey = 'pmi';
 csv_text = $("ImportCSVForm.Fields.pmi_csv");
 convertCSVtoJsonAndAddToStateObject();
-// bom
-jsonKey = 'bom';
-csv_text = $("ImportCSVForm.Fields.bom_csv");
-convertCSVtoJsonAndAddToStateObject();
 // vm
 jsonKey = 'vm';
 csv_text = $("ImportCSVForm.Fields.vm_csv");
-convertCSVtoJsonAndAddToStateObject();
-// cost
-jsonKey = 'cost';
-csv_text = $("ImportCSVForm.Fields.cost_csv");
 convertCSVtoJsonAndAddToStateObject();
 // tenant
 jsonKey = 'tenant';
